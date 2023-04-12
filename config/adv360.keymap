@@ -21,7 +21,15 @@
 / {
   behaviors {
     #include "macros.dtsi"
-
+    
+    td0: tap_dance_0 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_0";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+    };
+        
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
@@ -43,7 +51,7 @@
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T                 &kp C_VOL_UP                                                                &kp C_PLAY_PAUSE   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN      &mo 2  &kp LALT   &none   &none   &kp DEL      &kp RCTRL        &kp C_NEXT   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                        &none      &none  &kp HOME   &none   &none  &kp LBKT          &none             &none   &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
- &kp LCTRL  &kp GRAVE   &none  &kp LEFT  &kp RIGHT                             &kp LGUI  &kp ENTER   &kp END                  &kp RBKT  &kp BACKSPACE         &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
+ &kp LCTRL  &kp GRAVE   &td0  &kp LEFT  &kp RIGHT                             &kp LGUI  &kp ENTER   &kp END                  &kp RBKT  &kp BACKSPACE         &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
