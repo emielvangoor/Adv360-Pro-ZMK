@@ -147,11 +147,11 @@
 
         layer_symbols {
             bindings = <
-&none  &none  &none      &none              &none       &none           &trans                                                        &none      &none  &none                 &none                  &none    &none  &none
-&none  &none  &kp GRAVE  &kp APOSTROPHE     &kp TILDE   &kp PERCENT     &none                                                         &none      &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none  &none
-&none  &none  &kp MINUS  &kp EQUAL          &kp DOLLAR  &kp UNDERSCORE  &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &arrows  &none  &none
-&none  &none  &none      &kp DOUBLE_QUOTES  &kp SLASH   &kp EXCL        &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none  &none
-&none  &none  &none      &none              &none                       &none   &kp ENTER  &none                &none  &kp BACKSPACE  &kp SPACE         &kp LT                &kp GT                 &none    &none  &none
+&none  &none  &none      &none              &none       &none           &trans                                                        &none      &none  &none                 &none                  &none    &none   &none
+&none  &none  &kp GRAVE  &kp APOSTROPHE     &kp TILDE   &kp PERCENT     &none                                                         &none      &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none   &none
+&none  &none  &kp MINUS  &kp EQUAL          &kp DOLLAR  &kp UNDERSCORE  &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &arrows  &trans  &none
+&none  &none  &none      &kp DOUBLE_QUOTES  &kp SLASH   &kp EXCL        &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &trans  &none
+&none  &none  &none      &none              &none                       &none   &kp ENTER  &none                &none  &kp BACKSPACE  &kp SPACE         &kp LT                &kp GT                 &none    &none   &none
             >;
         };
 
