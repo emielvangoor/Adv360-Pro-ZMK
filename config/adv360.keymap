@@ -130,6 +130,18 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
         };
+        cmd_tab: cmd_tab {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp TAB>;
+        };
+        cmd_shift_tab: cmd_shift_tab {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHIFT_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp TAB>;
+        };
     };
 
     keymap {
@@ -147,11 +159,11 @@
 
         layer_symbols {
             bindings = <
-&none  &none  &none      &none              &none       &none           &trans                                                        &none      &none  &none                 &none                  &none    &none   &none
-&none  &none  &kp GRAVE  &kp APOSTROPHE     &kp TILDE   &kp PERCENT     &none                                                         &none      &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none   &none
-&none  &none  &kp MINUS  &kp EQUAL          &kp DOLLAR  &kp UNDERSCORE  &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &arrows  &trans  &none
-&none  &none  &none      &kp DOUBLE_QUOTES  &kp SLASH   &kp EXCL        &none   &none      &none  &none  &none  &none  &none          &none      &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &trans  &none
-&none  &none  &none      &none              &none                       &none   &kp ENTER  &none                &none  &kp BACKSPACE  &kp SPACE         &kp LT                &kp GT                 &none    &none   &none
+&none  &none  &none      &none              &none       &none           &trans                                                        &none      &none           &none                 &none                  &none    &none   &none
+&none  &none  &kp GRAVE  &kp APOSTROPHE     &kp TILDE   &kp PERCENT     &none                                                         &none      &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none   &none
+&none  &none  &kp MINUS  &kp EQUAL          &kp DOLLAR  &kp UNDERSCORE  &none   &none      &none  &none  &none  &none  &none          &none      &cmd_tab        &kp LEFT_BRACE        &kp RIGHT_BRACE        &arrows  &trans  &none
+&none  &none  &none      &kp DOUBLE_QUOTES  &kp SLASH   &kp EXCL        &none   &none      &none  &none  &none  &none  &none          &none      &cmd_shift_tab  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &trans  &none
+&none  &none  &none      &none              &none                       &none   &kp ENTER  &none                &none  &kp BACKSPACE  &kp SPACE                  &kp LT                &kp GT                 &none    &none   &none
             >;
         };
 
