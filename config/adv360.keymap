@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define NONE 0
@@ -134,13 +135,13 @@
             compatible = "zmk,behavior-macro";
             label = "CMD_TAB";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp TAB>;
+            bindings = <&kt LEFT_GUI &kp TAB>;
         };
         cmd_shift_tab: cmd_shift_tab {
             compatible = "zmk,behavior-macro";
             label = "CMD_SHIFT_TAB";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&kt LEFT_GUI &kt LEFT_SHIFT &kp TAB>;
         };
     };
 
