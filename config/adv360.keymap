@@ -19,6 +19,10 @@
 #define NONE 0
 #define SYMBOLS 1
 
+&mt {
+    tapping-term-ms = <100>;
+};
+
 / {
     behaviors {
         #include "macros.dtsi"
