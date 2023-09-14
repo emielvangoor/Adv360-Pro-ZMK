@@ -119,18 +119,6 @@
     };
 
     macros {
-        arrow: arrow {
-            compatible = "zmk,behavior-macro";
-            label = "ARROW";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-        };
-        dbl_arrow: dbl_arrow {
-            compatible = "zmk,behavior-macro";
-            label = "DBL_ARROW";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-        };
         cmd_tab: cmd_tab {
             compatible = "zmk,behavior-macro";
             label = "CMD_TAB";
@@ -143,20 +131,20 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_GUI &kt LEFT_SHIFT &kp TAB>;
         };
-        dev_double_haakje: dev_double_haakje {
+        escape: escape {
             compatible = "zmk,behavior-macro";
-            label = "DEV_DOUBLE_HAAKJE";
+            label = "ESCAPE";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp LPAR &kp RPAR &kp LEFT>;
+            bindings = <&kp ESCAPE>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        double_haakje {
-            bindings = <&dev_double_haakje>;
-            key-positions = <23 24>;
+        hj-to-escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <43 44>;
         };
     };
 
