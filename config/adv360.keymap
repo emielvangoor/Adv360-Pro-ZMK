@@ -154,9 +154,9 @@
     combos {
         compatible = "zmk,combos";
 
-        double_haakje {
-            bindings = <&dev_double_haakje>;
-            key-positions = <23 24>;
+        press_esc_jk {
+            bindings = <&kp ESCAPE>;
+            key-positions = <43 44>;
         };
     };
 
