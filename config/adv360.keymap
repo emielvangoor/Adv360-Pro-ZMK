@@ -143,6 +143,21 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_GUI &kt LEFT_SHIFT &kp TAB>;
         };
+        dev_double_haakje: dev_double_haakje {
+            compatible = "zmk,behavior-macro";
+            label = "DEV_DOUBLE_HAAKJE";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp LPAR &kp RPAR &kp LEFT>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        double_haakje {
+            bindings = <&dev_double_haakje>;
+            key-positions = <23 24>;
+        };
     };
 
     keymap {
