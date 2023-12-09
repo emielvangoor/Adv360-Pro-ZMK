@@ -33,6 +33,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
+
         parenthesis: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
@@ -40,6 +41,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
+
         lt_gt: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
@@ -47,6 +49,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LT>, <&kp GT>;
         };
+
         quotes: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
@@ -54,6 +57,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp APOSTROPHE>, <&kp DOUBLE_QUOTES>;
         };
+
         colons: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
@@ -61,6 +65,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp SEMICOLON>, <&kp COLON>;
         };
+
         square_bracket: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_5";
@@ -68,6 +73,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -77,12 +83,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         arrows: arrows {
             compatible = "zmk,behavior-tap-dance";
             label = "ARROWS";
             #binding-cells = <0>;
             bindings = <&arrow>, <&dbl_arrow>;
         };
+
         space_symbol_layer: space_symbol_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_SYMBOL_LAYER";
@@ -92,18 +100,21 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
         pp_or_next_song: pp_or_next_song {
             compatible = "zmk,behavior-tap-dance";
             label = "PP_OR_NEXT_SONG";
             #binding-cells = <0>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
         };
+
         copy_paste: copy_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY_PASTE";
             #binding-cells = <0>;
             bindings = <&kp LG(C)>, <&kp LG(V)>;
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
@@ -125,24 +136,28 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT>;
         };
+
         dbl_arrow: dbl_arrow {
             compatible = "zmk,behavior-macro";
             label = "DBL_ARROW";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
         };
+
         cmd_tab: cmd_tab {
             compatible = "zmk,behavior-macro";
             label = "CMD_TAB";
             #binding-cells = <0>;
             bindings = <&kt LEFT_GUI &kp TAB>;
         };
+
         cmd_shift_tab: cmd_shift_tab {
             compatible = "zmk,behavior-macro";
             label = "CMD_SHIFT_TAB";
             #binding-cells = <0>;
             bindings = <&kt LEFT_GUI &kt LEFT_SHIFT &kp TAB>;
         };
+
         dev_double_haakje: dev_double_haakje {
             compatible = "zmk,behavior-macro";
             label = "DEV_DOUBLE_HAAKJE";
@@ -165,11 +180,11 @@
 
         default_layer {
             bindings = <
-&kp BSLH          &kp N1     &kp N2        &kp N3    &kp N4                   &kp N5  &kp C_VOLUME_UP                                                                                                &mo 3              &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W         &kp E     &kp R                    &kp T   &kp C_VOLUME_DOWN                                                                                              &pp_or_next_song   &kp Y   &kp U     &kp I      &kp O     &kp P     &kp EQUAL
-&kp ESC           &kp A      &kp S         &kp D     &space_symbol_layer 1 F  &kp G   &kp SINGLE_QUOTE   &kp LESS_THAN  &kp LEFT_BRACKET      &none  &none  &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp H   &kp J     &kp K      &kp L     &colons   &quotes
-&kp LSHFT         &kp Z      &kp X         &kp C     &kp V                    &kp B   &none              &none          &kp LEFT_BRACE        &none  &none  &kp RIGHT_BRACE        &none             &none              &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LEFT_CONTROL  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                        &kp BACKSPACE      &kp LEFT_GUI   &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS  &kp ENTER         &kp SPACE                  &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &sl 1
+&kp BSLH          &kp N1  &kp N2        &kp N3    &kp N4                   &kp N5  &kp C_VOLUME_UP                                                                                                &mo 3              &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB           &kp Q   &kp W         &kp E     &kp R                    &kp T   &kp C_VOLUME_DOWN                                                                                              &pp_or_next_song   &kp Y   &kp U     &kp I      &kp O     &kp P     &kp EQUAL
+&kp ESC           &kp A   &kp S         &kp D     &space_symbol_layer 1 F  &kp G   &kp SINGLE_QUOTE   &kp LESS_THAN  &kp LEFT_BRACKET      &none  &none  &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp H   &kp J     &kp K      &kp L     &colons   &quotes
+&kp LSHFT         &kp Z   &kp X         &kp C     &kp V                    &kp B   &none              &none          &kp LEFT_BRACE        &none  &none  &kp RIGHT_BRACE        &none             &none              &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LEFT_CONTROL  &sl 3   &kp LEFT_ALT  &kp LEFT  &kp RIGHT                        &kp BACKSPACE      &kp LEFT_GUI   &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS  &kp ENTER         &kp SPACE                  &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &sl 1
             >;
         };
 
