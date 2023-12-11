@@ -184,7 +184,7 @@
 &kp TAB           &kp Q       &kp W                    &kp E                    &kp R                    &kp T       &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y       &kp U       &kp I       &kp O       &kp P       &none
 &kp ESC           &kp A       &space_symbol_layer 5 S  &space_symbol_layer 4 D  &space_symbol_layer 1 F  &kp G       &none              &kp LEFT_ALT  &none      &none  &none  &none      &none      &none             &kp H       &kp J       &kp K       &kp L       &kp COLON   &kp SEMI
 &kp LSHFT         &kp Z       &kp X                    &kp C                    &kp V                    &kp B       &none              &none         &none      &none  &none  &none      &none      &none             &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
-&kp LEFT_CONTROL  &sl 3       &kp LEFT_ALT             &none                    &none                                &kp BACKSPACE      &kp LEFT_GUI  &kp LS(H)                &kp LS(H)  &kp ENTER  &kp SPACE                     &none       &none       &none       &none       &sl 1
+&kp LEFT_CONTROL  &sl 3       &kp LEFT_ALT             &none                    &none                                &kp BACKSPACE      &kp LEFT_GUI  &kp LS(H)                &kp LS(L)  &kp ENTER  &kp SPACE                     &none       &none       &none       &none       &sl 1
             >;
         };
 
