@@ -222,7 +222,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans            &trans             &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &kp DOLLAR        &kp GRAVE          &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SEMICOLON  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp MINUS         &kp PLUS           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &kp MINUS         &kp PLUS           &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans             &kp UNDER         &kp EQUAL          &trans         &trans  &trans
             >;
         };
