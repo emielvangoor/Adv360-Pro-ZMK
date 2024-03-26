@@ -167,7 +167,7 @@
         arc_split: arc_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp PLUS>;
+            bindings = <&macro_press>, <&kp LCTRL &kp PLUS>, <&macro_release>;
 
             label = "ARC_SPLIT";
         };
