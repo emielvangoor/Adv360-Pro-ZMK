@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ARROWS";
             #binding-cells = <0>;
-            bindings = <&doublespace>, <&dbl_arrow>;
+            bindings = <&singlearrow>, <&dbl_arrow>;
         };
 
         space_symbol_layer: space_symbol_layer {
@@ -171,6 +171,13 @@
 
             label = "ARC_SPLIT";
         };
+
+        singlearrow: singlearrow {
+            compatible = "zmk,behavior-macro";
+            label = "SINGLEARROW";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+        };
     };
 
     combos {
@@ -230,7 +237,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &trans            &trans             &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans     &kp DOLLAR        &kp GRAVE          &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &mo 1   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp SEMICOLON  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &kp MINUS         &kp PLUS           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE   &kp MINUS         &kp PLUS           &arrows        &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans             &kp UNDER         &kp EQUAL          &trans         &trans  &trans
             >;
         };
