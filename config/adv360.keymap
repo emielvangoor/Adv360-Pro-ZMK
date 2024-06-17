@@ -182,7 +182,7 @@
         ctrl_option: ctrl_option {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT>;
+            bindings = <&kt LEFT_CONTROL &kt LEFT_ALT>;
             label = "CTRL_OPTION";
         };
     };
