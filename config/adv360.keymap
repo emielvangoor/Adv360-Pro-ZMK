@@ -24,13 +24,6 @@
             label = "SINGLE_ARROW";
         };
 
-        savevim: save_vim {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp F &kp S>;
-            label = "SAVE_VIM";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -65,14 +58,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        sv {
-            bindings = <&savevim>;
-            key-positions = <41 42>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
     };
