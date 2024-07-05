@@ -27,7 +27,7 @@
         savevim: save_vim {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp F &kp S>;
+            bindings = <&kp COLON &kp F &kp S>;
             label = "SAVE_VIM";
         };
 
@@ -68,7 +68,7 @@
     combos {
         compatible = "zmk,combos";
 
-        save_vim_combo {
+        sv {
             bindings = <&savevim>;
             key-positions = <41 42>;
         };
