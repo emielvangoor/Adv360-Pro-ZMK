@@ -102,11 +102,6 @@
             bindings = <&kp LC(S)>;
             key-positions = <41 42>;
         };
-
-        f_is_mo_4 {
-            bindings = <&mo 4>;
-            key-positions = <32>;
-        };
     };
 
     macros {
