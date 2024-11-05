@@ -66,8 +66,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_MOD";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
