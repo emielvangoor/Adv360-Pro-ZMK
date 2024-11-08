@@ -49,15 +49,6 @@
             hold-trigger-key-positions = <70>;
         };
 
-        hm_mod: hm_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_MOD";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-
         hml_mod_3: hml_mod_3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_MOD_3";
@@ -83,6 +74,19 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <40 41 42 43 37 53 68 70 69 38 21 22 25 7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75>;
         };
+
+        hmr_mod: hmr_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_MOD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <29 30 31 32 33>;
+        };
     };
 
     combos {
@@ -104,7 +108,7 @@
             bindings = <
 &kp EQUAL  &kp N1            &kp N2            &kp N3            &kp N4            &kp N5  &kp C_VOL_UP                                                                    &mo 0             &kp N6  &kp N7            &kp N8             &kp N9     &kp N0         &kp MINUS
 &kp TAB    &kp Q             &kp W             &kp E             &kp R             &kp T   &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y   &kp U             &kp I              &kp O      &kp P          &kp BSLH
-&kp ESC    &kp A             &hml LCTRL S      &hml LALT D       &hml_mod_3 1 F    &kp G   &kp LA(NUMBER_5)   &kp LEFT_ALT  &none             &none             &none      &kp GRAVE         &kp H   &kp J             &kp K              &kp L      &kp SEMICOLON  &kp SQT
+&kp ESC    &kp A             &hml LCTRL S      &hml LALT D       &hml_mod_3 1 F    &kp G   &kp LA(NUMBER_5)   &kp LEFT_ALT  &none             &none             &none      &kp GRAVE         &kp H   &hmr_mod 2 J      &kp K              &kp L      &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z             &kp X             &kp C             &kp V             &kp B                                    &none             &kp PG_UP                                      &kp N   &kp M             &kp COMMA          &kp DOT    &kp FSLH       &kp RSHFT
 &kp LCTRL  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LC(NUMBER_4)          &kp BSPC           &kp LCMD      &kp LEFT_ALT      &kp LEFT_CONTROL  &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON  &none          &mo 0
             >;
@@ -117,6 +121,16 @@
 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &kp LSHIFT  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans        &trans     &trans  &trans
 &trans      &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans     &trans  &trans
+            >;
+        };
+
+        aerospace {
+            bindings = <
+&trans  &trans            &trans            &trans            &trans            &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
