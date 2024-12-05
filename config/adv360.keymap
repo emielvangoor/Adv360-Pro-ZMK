@@ -101,6 +101,18 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
         };
+
+        hml_mouse: hml_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML_MOUSE";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
@@ -120,11 +132,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1  &kp N2        &kp N3       &kp N4          &kp N5  &kp C_VOL_UP                                                                    &mo 0             &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W         &kp E        &kp R           &kp T   &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y   &kp U             &kp I                &kp O       &kp P          &kp BSLH
-&kp ESC    &kp A   &hml LCTRL S  &hml LALT D  &hml_mod_3 1 F  &kp G   &none              &kp LEFT_ALT  &kp RIGHT         &kp LEFT          &kp RIGHT  &kp GRAVE         &kp H   &kp J             &kp K                &kp L       &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z   &kp X         &kp C        &kp V           &kp B                                    &none             &none                                          &kp N   &hmr LCTRL M      &hmr LEFT_ALT COMMA  &kp PERIOD  &kp FSLH       &kp RSHFT
-&kp LCTRL  &none   &kp K_BACK    &mkp RCLK    &mkp LCLK               &kp BSPC           &kp LCMD      &kp LEFT_ALT      &kp LEFT_CONTROL  &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp COLON   &none          &mo 0
+&kp EQUAL              &kp N1  &kp N2        &kp N3       &kp N4          &kp N5  &kp C_VOL_UP                                                                    &mo 0             &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
+&kp TAB                &kp Q   &kp W         &kp E        &kp R           &kp T   &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y   &kp U             &kp I                &kp O       &kp P          &kp BSLH
+&kp ESC                &kp A   &hml LCTRL S  &hml LALT D  &hml_mod_3 1 F  &kp G   &none              &kp LEFT_ALT  &kp RIGHT         &kp LEFT          &kp RIGHT  &kp GRAVE         &kp H   &kp J             &kp K                &kp L       &kp SEMICOLON  &kp SQT
+&hml_mouse LSHFT LCLK  &kp Z   &kp X         &kp C        &kp V           &kp B                                    &none             &none                                          &kp N   &hmr LCTRL M      &hmr LEFT_ALT COMMA  &kp PERIOD  &kp FSLH       &kp RSHFT
+&kp LCTRL              &none   &kp K_BACK    &mkp RCLK    &mkp LCLK               &kp BSPC           &kp LCMD      &kp LEFT_ALT      &kp LEFT_CONTROL  &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp COLON   &none          &mo 0
             >;
         };
 
