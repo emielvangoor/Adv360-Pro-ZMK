@@ -1,6 +1,7 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -121,6 +122,11 @@
         jk_is_ctrl_s {
             bindings = <&kp LC(S)>;
             key-positions = <41 42>;
+        };
+
+        df_ctrl_b {
+            bindings = <&kp LC(B)>;
+            key-positions = <32 31>;
         };
     };
 
