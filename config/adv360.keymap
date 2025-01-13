@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -138,11 +138,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1  &kp N2         &kp N3       &kp N4          &kp N5  &kp C_VOL_UP                                                                    &mo 0             &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W          &kp E        &kp R           &kp T   &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y   &kp U             &kp I                &kp O       &kp P          &kp BSLH
-&kp ESC    &kp A   &hml LCTRL S   &hml LALT D  &hml_mod_3 1 F  &kp G   &kp LC(B)          &kp LEFT_ALT  &kp RIGHT         &kp LEFT          &kp RIGHT  &kp GRAVE         &kp H   &kp J             &kp K                &kp L       &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z   &kp X          &kp C        &kp V           &kp B                                    &none             &none                                          &kp N   &hmr LCTRL M      &hmr LEFT_ALT COMMA  &kp PERIOD  &kp FSLH       &kp RSHFT
-&kp LCTRL  &none   &kp C_AC_BACK  &mkp RCLK    &mkp LCLK               &kp BSPC           &kp LCMD      &kp LEFT_ALT      &kp LEFT_CONTROL  &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp COLON   &none          &mo 0
+&kp EQUAL  &kp N1  &kp N2        &kp N3       &kp N4          &kp N5  &kp C_VOL_UP                                                                    &mo 0             &kp N6  &kp N7            &kp N8               &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W         &kp E        &kp R           &kp T   &kp C_VOLUME_DOWN                                                               &pp_or_next_song  &kp Y   &kp U             &kp I                &kp O       &kp P          &kp BSLH
+&kp ESC    &kp A   &hml LCTRL S  &hml LALT D  &hml_mod_3 1 F  &kp G   &kp LC(B)          &kp LEFT_ALT  &kp RIGHT         &kp LEFT          &kp RIGHT  &kp GRAVE         &kp H   &kp J             &kp K                &kp L       &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z   &kp X         &kp C        &kp V           &kp B                                    &none             &none                                          &kp N   &hmr LCTRL M      &hmr LEFT_ALT COMMA  &kp PERIOD  &kp FSLH       &kp RSHFT
+&kp LCTRL  &none   &kp LS(H)     &mkp RCLK    &mkp LCLK               &kp BSPC           &kp LCMD      &kp LEFT_ALT      &kp LEFT_CONTROL  &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp COLON   &none          &mo 0
             >;
         };
 
