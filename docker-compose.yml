@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  zmk-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zmk
+    container_name: zmk-adv360
+    volumes:
+      - ./firmware:/app/firmware:z
+      - ./config:/app/config:ro,z
+    environment:
+      - TIMESTAMP=${TIMESTAMP:-$(date -u +"%Y%m%d%H%M%S")}

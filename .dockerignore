@@ -1,0 +1,7 @@
+.git
+.github
+firmware/*.uf2
+build/
+*.md
+LICENSE
+settings-reset.uf2
