@@ -141,7 +141,7 @@
 &kp TAB    &kp Q   &kp W      &kp E      &kp R           &kp T   &kp C_VOLUME_DOWN                                                            &pp_or_next_song  &kp Y   &kp U             &kp I              &kp O       &kp P          &kp BSLH
 &kp ESC    &kp A   &kp S      &kp D      &hml_mod_3 1 F  &kp G   &kp TILDE          &kp LEFT_ALT   &kp RIGHT         &kp LEFT      &kp RIGHT  &kp GRAVE         &kp H   &kp J             &kp K              &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z   &kp X      &kp C      &kp V           &kp B                                     &none             &kp LC(EXCL)                               &kp N   &hmr LALT M       &hmr LCTRL COMMA   &kp PERIOD  &kp FSLH       &kp RSHFT
-&kp LCTRL  &none   &kp LS(H)  &mkp RCLK  &mkp LCLK               &kp BSPC           &cmd_cmdspace  &kp LEFT_ALT      &kp LCTRL     &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON   &none          &mo 0
+&kp LCTRL  &none   &kp LS(H)  &mkp RCLK  &mkp LCLK               &kp BSPC           &cmd_cmdspace  &kp LCTRL      &kp LEFT_ALT     &kp ENTER  &kp SPACE                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON   &none          &mo 0
             >;
         };
 
