@@ -14,7 +14,7 @@ grep -vE '(^#|^$)' build/left/zephyr/.config
 cp build/left/zephyr/zmk.uf2 "./firmware/${TIMESTAMP}-${COMMIT}-left.uf2"
 
 # Build right side if selected
-if [ "${BUILD_RIGHT}" = true ]; then
+if [ "${BUILD_RIGHT:-true}" = true ]; then
     # West Build (right)
     west build -s zmk/app -d build/right -b adv360_right -- -DZMK_CONFIG="${PWD}/config"
     # Adv360 Right Kconfig file
